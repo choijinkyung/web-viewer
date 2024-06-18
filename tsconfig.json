@@ -1,0 +1,65 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true, //import * as React from 'react'; -> import React from 'react';
+    "sourceMap": false, //에러난 위치 찾기 쉬움
+    "lib": [
+      "ES2020", 
+      "DOM"
+    ],
+    "jsx": "react",
+    "module": "esnext", //최신 모듈
+    "moduleResolution": "Node",
+    "target": "es5",
+    "strict": true, 
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@mobileComponents/*" : [
+        "src/mobileComponents/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@mobilePages/*" : [
+        "src/mobilePage/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@typings/*": [
+        "src/typings/*"
+      ],
+      "@assets/*":[
+        "src/typings/*"
+      ],
+      "@store/*":[
+        "src/store/*"
+      ],
+      "@style/*":[
+        "src/style/*"
+      ],
+      "@lang/*": [
+        "src/lang/*"
+      ]
+    },
+    "typeRoots": ["./src/@types","./@types"],
+  },
+   "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "Node",
+      "target": "es5",
+      "esModuleInterop": true,
+      "useUnknownInCatchVariables": false
+    }
+  }
+}

@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=0.5, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <!-- <meta name="viewport"
+  content="width=1280px, user-scalable=no"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="manifest" href="/src/assets/manifest.json" />
+    <link rel="apple-touch-icon" sizes="192x192" href="src/assets/plogo.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="src/assets/plogo.png" />
+    <link rel="icon" href="/src/assets/favicon.ico" />
+    <title>WebViewer</title>
+    <style>
+      html,
+      body {
+        width: 100vw;
+        min-height: 100vh;
+        overflow: auto;
+        background: #383838;
+      }
+
+      /* body {
+      font-size: 15px;
+      line-height: 1.46668;
+      font-weight: 400;
+      font-variant-ligatures: common-ligatures;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+    } */
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        /* adds animation for all transitions */
+        /* -webkit-transition: .25s ease-in-out; 
+    -moz-transition: .25s ease-in-out; 
+    -o-transition: .25s ease-in-out; 
+    transition: .25s ease-in-out;  */
+        margin: 0;
+        padding: 0;
+        -webkit-text-size-adjust: none;
+      }
+    </style>
+  </head>
+
+  <body style="background: #393939" oncontextmenu="return false" onselectstart="return false">
+    <div id="app"></div>
+    <script src="/dist/app.js"></script>
+  </body>
+</html>
